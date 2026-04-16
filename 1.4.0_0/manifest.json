@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "48": "icons/icon48.png"
+      },
+      "default_title": "Cursorfly - Open Source Screen Recorder with Auto Zoom"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "Free & open-source screen recorder. Create beautiful recordings with automatic cinematic zoom & pan — 100% offline, no sign-up.",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAii19GuVyFMLKi9yccqsjMGLRoZXqgdnZ4YYAp/lapCfGfRwZd5YVqTHJd9GQRQrd/EErz+tPxcPBOwv32skdDgFZ8R/Wiss1HcUtmyyI/rjQrFCE9pMQrOxzgXH4/1jEpCZ5ag4ZslJPdmISwT+hg7EVye4ofHdUjn3QQd3B1C/QKvdtpnypzRp4xvJyNvvnphy1yB00uQ4OcopcFQtYbJCAm9tYWwRaTVnNHo6T2f41xfFbHn6fVGwtr8vC5+bQz6FqtIqlmaA6V/RN4fUu68Ni3o9d4+xgMXIUfzqtsesecoDCmvMvIpaSI205V0fi5yopXcTy9bq9LchVuEe4ZwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "102",
+   "name": "Cursorfly - Open Source Screen Recorder with Auto Zoom",
+   "permissions": [ "activeTab", "storage", "desktopCapture", "tabs", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "record.html", "record.js", "editor.html", "editor.js", "zoom-analyzer.js", "video-processor.js", "recorder.js", "content.js" ]
+   } ]
+}
