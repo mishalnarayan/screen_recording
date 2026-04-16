@@ -1,0 +1,40 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "32": "icons/icon32.png",
+         "48": "icons/icon48.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content-scripts/cursor-manager.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+   },
+   "default_locale": "en_US",
+   "description": "__MSG_description__",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxkEkCLgPoI69yKKHjPw3KpRpJtNXJ0faWxyv3mghDsd1q/KN7suQpIv/4ggoCovou7FyI/OhRCrmmzLZR47eQhipi7RBBpWwOWCgGs4HknO8uXjlXOC+QDluhbeQ/krs0eizOn4QQ4uZ5fhAa8zPVhy197+l3za2AeetLSpyngs7d2VmLs8DMtA+I0nxZGuWkIGIMnPDU+DL3RY5PuwP5n6Ila8Rrknu67NJyLLTwJVVvKSKIM2ecqbLLbAEZSRS3uIIkZWRvgsjBR8ml6O9swK9JWwhD0d8IfhIMoya1E1oi4rOpzvlVFDwYjVZHlJnligyOfDq0x6w5H7bK26MRwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "permissions": [ "activeTab", "desktopCapture", "storage", "tabs", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "cursor-img/macos-pointer.png", "cursor-img/macos-hand.png", "cursor-img/macos-text.png" ]
+   } ]
+}
